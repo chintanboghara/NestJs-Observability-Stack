@@ -171,7 +171,7 @@ This tells Prometheus to scrape the metrics endpoint of the NestJS application e
 Start all containers using Docker Compose:
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 Wait for all three containers (NestJS app, Prometheus, and Grafana) to initialize.
