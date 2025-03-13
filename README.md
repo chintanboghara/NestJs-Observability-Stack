@@ -1,7 +1,5 @@
 # Monitoring with NestJS, Prometheus, and Grafana
 
-## Overview
-
 A real production incident showed how a lack of proper monitoring can lead to extended downtime, customer dissatisfaction, and lost revenue. In one case, an application outage took six hours to recover because the team lacked effective monitoring and alerting. This project demonstrates how to set up basic monitoring for a NestJS web application using Prometheus for metrics collection and Grafana for visualization—all on your local machine with Docker.
 
 In this guide, you'll create:
