@@ -1,11 +1,15 @@
+version: '3.8'
+
 services:
   nestjs-observability-stack:
     build: .
     container_name: nestjs-observability-stack
     ports:
       - "3000:3000"
+    # Wait for Prometheus to be available before starting
     depends_on:
-      - metr101-prometheus
+      - prometheus
+    restart: always
 
   prometheus:
     image: prom/prometheus:v2.54.1
@@ -14,9 +18,11 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: always
 
   grafana:
     image: grafana/grafana:11.2.2
     container_name: grafana
     ports:
       - "3030:3000"
+    restart: always
