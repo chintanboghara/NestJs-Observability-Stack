@@ -176,7 +176,7 @@ docker compose up -d
 
 Wait for all three containers (NestJS app, Prometheus, and Grafana) to initialize.
 
-![Docker](/Images/image.png)
+![Docker](/Images/Docker.png)
 
 ## Testing and Validation
 
@@ -190,17 +190,25 @@ Wait for all three containers (NestJS app, Prometheus, and Grafana) to initializ
    - In the Prometheus UI, enter `get_hello_calls` in the query bar and click "Execute" to view the current counter value.
    - Hit [http://localhost:3000/](http://localhost:3000/) several times and observe the counter value update.
 
+![get_hello_calls](/Images/get_hello_calls.png)
+
 ## Setting Up Grafana Dashboard
 
 1. **Access Grafana:**
 
    Navigate to [http://localhost:3030/](http://localhost:3030/) and log in using the default credentials `admin/admin`. (You will be prompted to change the password on first login.)
 
+![Grafana](/Images/Grafana.png)
+
 2. **Configure the Prometheus Data Source:**
 
    - Open the side panel and select **Dashboards** → **Create Dashboard** → **Add visualization** → **Configure a new datasource**.
    - Choose **Prometheus** as the datasource.
    - Set the connection URL to `http://prometheus:9090/` and click **Save & Test**.
+
+![alt text](Images\AddVisualization.png)
+
+![alt text](Images/Data.png)
 
 3. **Create a Dashboard Visualization:**
 
