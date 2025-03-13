@@ -176,6 +176,8 @@ docker compose up -d
 
 Wait for all three containers (NestJS app, Prometheus, and Grafana) to initialize.
 
+![Docker](/Images/image.png)
+
 ## Testing and Validation
 
 1. **Verify Application Metrics:**
