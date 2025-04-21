@@ -258,7 +258,3 @@ Wait for all three containers (NestJS app, Prometheus, and Grafana) to initializ
    - With the Prometheus datasource configured, create a new dashboard visualization.
    - Select the `get_hello_calls` metric and save the visualization.
    - Now you can monitor how the metric changes over time in Grafana.
-
-## Conclusion
-
-This setup demonstrates a simple but effective monitoring solution for a production-like NestJS application. By integrating Prometheus and Grafana, you can gain real-time insights into your application's behavior, allowing you to proactively detect and resolve issues before they escalate.
